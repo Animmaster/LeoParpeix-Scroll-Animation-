@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+h1,
+p {
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -1%;
+}
+
+h1 {
+  font-size: clamp(3rem, 5vw, 7rem);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  background-color: #fff318;
+  overflow: hidden;
+}
+
+.intro,
+.outro {
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.intro h1,
+.outro h1 {
+  width: 60%;
+}
+
+.spotlight {
+  padding: 12rem 6rem;
+}
+
+.spotlight-item {
+  width: 40%;
+  margin-bottom: 10rem;
+}
+
+.spotlight-item:last-child {
+  margin-bottom: 0;
+}
+
+.spotlight-item:nth-child(odd) {
+  margin-right: auto;
+}
+
+.spotlight-item:nth-child(even) {
+  margin-left: auto;
+}
+
+.spotlight-item .spotlight-item-copy {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.lottie-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100svh;
+}
+
+.bee {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 125px;
+  height: 125px;
+  will-change: transform;
+}
+
+.bee-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 115px;
+  height: 115px;
+  filter: brightness(0) blur(2px);
+  opacity: 0.5;
+  will-change: transform, opacity;
+}
+
+@media (max-width: 1000px) {
+  .intro h1,
+  .outro h1 {
+    width: 90%;
+    font-size: 2rem;
+  }
+
+  .spotlight {
+    padding: 12rem 2rem;
+  }
+
+  .spotlight-item {
+    width: 60%;
+  }
+}
